@@ -1,0 +1,75 @@
+.site-logo {
+}
+
+  &__text {
+      float: left;
+      margin: 22 0 22 0px;
+      font-size: 20px;
+      line-height: 25px;
+      font-family: $font-family-sans-serif;
+      font-weight: $font-weight-normal;
+      color: $mid-gray;
+      display: block;
+
+    }
+
+.image {
+	float: left;
+	max-height: 60px;
+	margin: 10px;
+}
+
+}
+
+.site-footer {
+  background: $light-gray;
+  width:100%;
+  box-shadow: $subtle-inner-shadow;
+
+  &__wrapper {
+    @include grid-row();
+  }
+
+  &__social-links {
+    @include grid-column($columns: 6);
+    padding: rem-calc(48 0 12);
+
+    ul {
+      list-type: none;  
+      margin: 0;
+    }
+
+    li {
+      display: inline-block;
+      margin-right: rem-calc(12);
+    }
+
+    a {
+      font-size: rem-calc(15);
+      line-height: rem-calc(14);
+      font-weight: $font-weight-light;
+    }
+
+    @media #{$small-only} {
+      @include grid-column($columns:5);
+      padding-left: rem-calc(12);
+    }
+  }
+
+  &__copyright {
+    @include grid-column($columns: 6);
+    padding: rem-calc(48 0 12);
+    
+    span {
+      float: right;
+      font-size: rem-calc(15);
+      line-height: rem-calc(25);
+      font-weight: $font-weight-light;
+      font-family: $body-font-family;
+    }
+    @media #{$small-only} {
+      @include grid-column($columns:7);
+      padding-left: rem-calc(28);
+    }
+  }
+}
