@@ -67,13 +67,11 @@
   color: #A52A2A;
 }
 .cusd{
-  /*padding-top: 5%;*/
-  margin-top:3%;
-  margin-right: 26%;
+  margin: 0 auto;
+  display: block;
   height:160px;
   width:160px;
   transition: opacity 0.7s ease;
-  /*margin: 0 50%;*/
 }
 .cusd:hover{
   opacity: .7;
