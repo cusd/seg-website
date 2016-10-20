@@ -66,10 +66,12 @@
   color: #A52A2A;
 }
 .mid{
-  padding-top: 5%;
+  /*padding-top: 5%;*/
+  margin-top:3%;
+  margin-right: 36%;
   height:160px;
   width:160px;
-  margin: 0 50%;
+  /*margin: 0 50%;*/
 }
 
 
