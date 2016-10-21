@@ -16,6 +16,12 @@ $(function(){
     $('.txt_hide').show(400);
     // $('.profile').css('margin-top','0');
 
+    var rowHeight = $(".row").height();
+
+    // $(".valign").height(rowHeight);
+    $(".midMaker").css("height", function(rowHeight){return rowHeight});
+    // $(".midMaker").css("height",rowHeight);
+
 
     // $('.left_fly').animate({'margin-left':-100 }, 400);
 	// $('.right_fly').animate({'margin-right': }, 400);
@@ -24,3 +30,6 @@ $(function(){
 
 
 
+// $( "div.example" ).css( "width", function( index ) {
+//   return index * 50;
+// });

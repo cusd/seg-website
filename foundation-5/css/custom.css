@@ -92,8 +92,34 @@ line-height: 90px;
   opacity: .7;
 }
 
+.bleh{
+  display: block;
+  margin: 0 auto;
+}
+.valign{
+ display:table-cell;
+  vertical-align:middle;
+}
+.midMaker{
+  color: red;
 
+}
 
+/*
+.valign-middle {
+    display: table;
+}
+
+.valign-middle .columns {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.valign-middle .columns,
+.valign-middle [class*="column"] + [class*="column"]:last-child {
+    float: none;
+}
+*/
 /*OLD NAV BAR*/
 /*<nav class="top-bar" data-topbar role="navigation">
       <ul class="title-area">
