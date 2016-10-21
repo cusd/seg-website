@@ -13,6 +13,11 @@
    margin-right: auto;
    max-width: initial;
 }
+.text_center{
+  display: block;
+text-align: center;
+vertical-align: middle;
+}
 .nav_head{
 	margin:0;
 	font-family: 'Muli', sans-serif;

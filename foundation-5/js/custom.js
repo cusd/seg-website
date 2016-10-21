@@ -9,7 +9,7 @@
 
 
 $(function(){
-    $('.card').animate({'margin-top': '100px'}, 1000);
+    $('.card').animate({'margin-top': '20px'}, 1000);
     $('.card').fadeIn("slow", 400);
     // turn off display nones
     $('.profile').show(400);
