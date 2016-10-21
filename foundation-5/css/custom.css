@@ -1,6 +1,13 @@
-/*custom.css*/
+9/*custom.css*/
 .fullWidth {
   padding: 30px;
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: initial;
+}
+.headerfullWidth {
+  padding: 5px;
    width: 100%;
    margin-left: auto;
    margin-right: auto;
@@ -10,6 +17,9 @@
 	margin:0;
 	font-family: 'Muli', sans-serif;
 
+}
+.margin_top{
+  margin-top: 150px;
 }
 .back_color{
 	background-color: #f2f2f2;
