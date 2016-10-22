@@ -6,7 +6,10 @@
 // var startPos = -100;
 // var endPos = (currWidth / 2) + (startPos / 2);
 // console.log(endPos);
-
+$(document).ready(
+function (){
+	$("#pikame").PikaChoose({carousel:true});
+});
 
 $(function(){
     $('.card').animate({'margin-top': '20px'}, 1000);
