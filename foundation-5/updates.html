@@ -107,11 +107,11 @@
             </div>
             <div class="large-9 medium-8 small-6 columns" style="overflow:hidden;"></div>
             <div>
-              <h4> Title </h4>
-              <h5> <span>Name</span>  <span style="margin-left:5%;"> Date</span> </h5>
+              <h4 class="title"> Title: </h4>
+              <h5> <span class="author">Name:</span>  <span class="date" style="margin-left:5%;"> Date:</span> </h5>
              <div>
                 <input type="checkbox" class="read-more-state" id="post-3" />
-                <p class="read-more-wrap">Lorem ipsum ha ahha ah ah ah ah ha ha ha ha hds hksd hds hkfds fdkhs fks dfshk fdskh fdshk dfshkf dkhdf skdfs kds kdfs khfd kdsf  <span class="read-more-target"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type s was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</span></p>
+                <p class="read-more-wrap caption"> Caption:<span class="read-more-target main_content">Content:</span></p>
                 <label for="post-3" id="hider" class="read-more-trigger"></label>
               </div>
             </div>
@@ -125,27 +125,7 @@
 
         <div class="results"></div> 
  
-        <script>
-         
-         // ID of the Google Spreadsheet
-         var spreadsheetID = "130nETntuTDctX0oB5LoUwFZ26hNII4pM7-nEOBqP_do";
-         
-         // Make sure it is public or set to Anyone with link can view 
-         var url = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/od6/public/values?alt=json";
-         
-         $.getJSON(url, function(data) {
-         
-          var entry = data.feed.entry;
-         
-          $(entry).each(function(){
-            // Column names are name, age, etc.
-            console.log(entry)
-            $('.results').prepend('<h2>'+this.gsx$authorname.$t+'</h2>');
-          });
-         
-         });
-         
-        </script>
+      
 
         
 

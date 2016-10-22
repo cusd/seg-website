@@ -106,30 +106,31 @@ $(document).ready(function() {
 
 
 $(function(){
-// var id='130nETntuTDctX0oB5LoUwFZ26hNII4pM7-nEOBqP_do';
-// 	var url = "https://spreadsheets.google.com/feeds/cells/130nETntuTDctX0oB5LoUwFZ26hNII4pM7-nEOBqP_do/od6/public/values?alt=json";
-// 	// $.getJSON(url,{}, function (d) { console.log(d); });
-
-// 	$.getJSON("http://cors.io/spreadsheets.google.com/feeds/list/130nETntuTDctX0oB5LoUwFZ26hNII4pM7-nEOBqP_do/od6/public/values?alt=json", function(data) {
-// 	  //first row "title" column
-// 	  console.log(data.feed.entry[0]['gsx$title']);
-// });
 
 
+	  // ID of the Google Spreadsheet
+         var spreadsheetID = "130nETntuTDctX0oB5LoUwFZ26hNII4pM7-nEOBqP_do";
+         
+         // Make sure it is public or set to Anyone with link can view 
+         var url = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/od6/public/values?alt=json";
+         
+         $.getJSON(url, function(data) {
+         
+          var entry = data.feed.entry;
+         
+          $(entry).each(function(){
+            // Column names are name, age, etc.
+            console.log(entry)
 
 
-	// $.getJSON(url, function(data){
-	//   var entry = data.feed.entry;
-	//   console.log(data.feed.entry[0]['gsx$title']);
-	  // $(entry).each(function(){
-	    // Column names are name, age, etc.
-	    // console.log(entry);
-	    // console.log(data.feed.entry[0]['gsx$title']['$t']);
-	    // $('.results').prepend('<h2>'+entry.gsx$title.$t+'</h2><p>'+entry.gsx$age+'</p>');
-	  // });
-	// })
-
-
+            $('.title').append(this.gsx$title.$t);
+            $('.author').append(this.gsx$author.$t);
+            $('.date').append(this.gsx$date.$t);
+            $('.caption').append(this.gsx$caption.$t);
+            $('.content').append(this.gsx$content.$t);
+          });
+         
+         });
 
 
     $('.card').animate({'margin-top': '20px'}, 1000);
