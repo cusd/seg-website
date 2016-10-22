@@ -1851,6 +1851,7 @@ meta.foundation-mq-topbar {
   .top-bar-section ul li {
    background: #E04D25;}
     .top-bar-section ul li > a {
+      /*margin-left: 10px;*/
       color: #FFFFFF;
       display: block;
       font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important;
@@ -2074,7 +2075,7 @@ meta.foundation-mq-topbar {
       font-size: 0.875rem;
       height: 1.75rem;
       position: relative;
-      top: 0.53125rem; }
+      top: 1.53125rem; }
     .top-bar .has-form > .button,
     .top-bar .has-form > button {
       font-size: 0.875rem;
@@ -2108,7 +2109,7 @@ meta.foundation-mq-topbar {
      background: #E04D25;
       /*manual change*/
       line-height: 4.5125rem;
-      padding: 2px 0.9375rem; }
+      padding: 2.7px 0.9375rem; }
       .top-bar-section li:not(.has-form) a:not(.button):hover {
         background-color: #555555;
         background: #222222; }
