@@ -25,7 +25,16 @@ $(document).ready(function() {
 		$(".side_fix").css("margin" , "0 10%;");
 
 	}
-	function countWords(){
+	
+
+
+  // $.ajax("https://docs.google.com/spreadsheet/130nETntuTDctX0oB5LoUwFZ26hNII4pM7-nEOBqP_do&output=csv").done(function(result){
+  //               alert(result);
+  //       });
+
+});
+
+function countWords(){
 	    // Select all the p elements in the page.
 	    var paragraphs = document.getElementsByTagName("p");
 	  
@@ -46,15 +55,6 @@ $(document).ready(function() {
 	    }
 	}
 
-	countWords();
-
-
-
-  // $.ajax("https://docs.google.com/spreadsheet/130nETntuTDctX0oB5LoUwFZ26hNII4pM7-nEOBqP_do&output=csv").done(function(result){
-  //               alert(result);
-  //       });
-
-});
 
 // 	  /**
 //        * Load Sheets API client library.
@@ -115,7 +115,31 @@ $(function(){
          var url = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/od6/public/values?alt=json";
          
          $.getJSON(url, function(data) {
+
+
+	// test crap not working
+         // var count=0;
+     //     var entry = data.feed.entry;
+     //      $(entry).each(function(){
+     //      	count=count+1;
+     //      });
          
+     //     for (i=0;i<count;i++){
+     //     	console.log(entry[i]['gsx$count']['$t']);
+     //     	itr="post-"+entry[i]['gsx$count']['$t'];
+     //     	console.log(itr);
+    
+     // 	    $('div.pic-3 , title').append(entry[i].gsx$title.$t);
+     //        $(itr+'.author').append(entry[i].gsx$author.$t);
+     //        $(itr+'.date').append(entry[i].gsx$date.$t);
+     //        $(itr+'.caption').append(entry[i].gsx$caption.$t);
+     //        $(itr+'.content').append(entry[i].gsx$content.$t);
+
+     //     };
+     // });
+
+
+	// kinda working bit
           var entry = data.feed.entry;
          
           $(entry).each(function(){
@@ -127,10 +151,11 @@ $(function(){
             $('.author').append(this.gsx$author.$t);
             $('.date').append(this.gsx$date.$t);
             $('.caption').append(this.gsx$caption.$t);
-            $('.content').append(this.gsx$content.$t);
+            $('.main_content').append(this.gsx$content.$t);
           });
          
          });
+
 
 
     $('.card').animate({'margin-top': '20px'}, 1000);
