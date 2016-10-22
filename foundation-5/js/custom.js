@@ -6,10 +6,110 @@
 // var startPos = -100;
 // var endPos = (currWidth / 2) + (startPos / 2);
 // console.log(endPos);
-$(document).ready(
-function (){
-	$("#pikame").PikaChoose({carousel:true});
+$(document).ready(function() {
+    $("#pic_1").fancybox({
+    	openEffect	: 'elastic',
+    	closeEffect	: 'elastic',
+
+    	helpers : {
+    		title : {
+    			type : 'inside'
+    		}
+    	}
+    });
+
+    $("#pic_2").fancybox({
+    	openEffect	: 'elastic',
+    	closeEffect	: 'elastic',
+
+    	helpers : {
+    		title : {
+    			type : 'inside'
+    		}
+    	}
+    });
+     $("#pic_3").fancybox({
+    	openEffect	: 'elastic',
+    	closeEffect	: 'elastic',
+
+    	helpers : {
+    		title : {
+    			type : 'inside'
+    		}
+    	}
+    });
+      $("#pic_4").fancybox({
+    	openEffect	: 'elastic',
+    	closeEffect	: 'elastic',
+
+    	helpers : {
+    		title : {
+    			type : 'inside'
+    		}
+    	}
+    });
+       $("#pic_5").fancybox({
+    	openEffect	: 'elastic',
+    	closeEffect	: 'elastic',
+
+    	helpers : {
+    		title : {
+    			type : 'inside'
+    		}
+    	}
+    });
+        $("#pic_6").fancybox({
+    	openEffect	: 'elastic',
+    	closeEffect	: 'elastic',
+
+    	helpers : {
+    		title : {
+    			type : 'inside'
+    		}
+    	}
+    });
+     $("#pic_7").fancybox({
+    	openEffect	: 'elastic',
+    	closeEffect	: 'elastic',
+
+    	helpers : {
+    		title : {
+    			type : 'inside'
+    		}
+    	}
+    });
+	  $("#pic_8").fancybox({
+    	openEffect	: 'elastic',
+    	closeEffect	: 'elastic',
+
+    	helpers : {
+    		title : {
+    			type : 'inside'
+    		}
+    	}
+    });
+	    $("#pic_9").fancybox({
+    	openEffect	: 'elastic',
+    	closeEffect	: 'elastic',
+
+    	helpers : {
+    		title : {
+    			type : 'inside'
+    		}
+    	}
+    });
+	      $("#pic_10").fancybox({
+    	openEffect	: 'elastic',
+    	closeEffect	: 'elastic',
+
+    	helpers : {
+    		title : {
+    			type : 'inside'
+    		}
+    	}
+    });
 });
+
 
 $(function(){
     $('.card').animate({'margin-top': '20px'}, 1000);
