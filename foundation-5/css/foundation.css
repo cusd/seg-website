@@ -58,7 +58,7 @@ body {
   background: #fff;
   color: #222;
   cursor: auto;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 1.5;
@@ -1583,7 +1583,7 @@ select {
   border-width: 1px;
   border-color: #cccccc;
   color: rgba(0, 0, 0, 0.75);
-  font-family: inherit;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important;
   font-size: 0.875rem;
   line-height: normal;
   padding: 0.5rem;
@@ -1729,8 +1729,9 @@ meta.foundation-mq-topbar {
       z-index: 98; }
 
 .top-bar {
-  background: #333333;
-  height: 2.8125rem;
+  /*manual change*/
+  background: #E04D25;
+  height: 4.8125rem;
   line-height: 2.8125rem;
   margin-bottom: 0;
   overflow: hidden;
@@ -1763,12 +1764,14 @@ meta.foundation-mq-topbar {
     margin: 0;
     position: relative; }
   .top-bar .name {
+    background: #E04D25;
     font-size: 16px;
-    height: 2.8125rem;
+    height: 4.8125rem;
     margin: 0; }
     .top-bar .name h1, .top-bar .name h2, .top-bar .name h3, .top-bar .name h4, .top-bar .name p, .top-bar .name span {
       font-size: 1.0625rem;
-      line-height: 2.8125rem;
+      /*manual change*/
+      line-height: 1.5rem;
       margin: 0; }
       .top-bar .name h1 a, .top-bar .name h2 a, .top-bar .name h3 a, .top-bar .name h4 a, .top-bar .name p a, .top-bar .name span a {
         color: #FFFFFF;
@@ -1791,7 +1794,7 @@ meta.foundation-mq-topbar {
       position: relative;
       text-transform: uppercase; }
     .top-bar .toggle-topbar.menu-icon {
-      margin-top: -16px;
+      margin-top: -27px;
       top: 50%; }
       .top-bar .toggle-topbar.menu-icon a {
         color: #FFFFFF;
@@ -1817,9 +1820,9 @@ meta.foundation-mq-topbar {
     .top-bar.expanded .title-area {
       background: #333333; }
     .top-bar.expanded .toggle-topbar a {
-      color: #888888; }
+      color: #FFFFFF; }
       .top-bar.expanded .toggle-topbar a span::after {
-        box-shadow: 0 0 0 1px #888888, 0 7px 0 1px #888888, 0 14px 0 1px #888888; }
+        ; }
     @media screen and (-webkit-min-device-pixel-ratio: 0) {
       .top-bar.expanded .top-bar-section .has-dropdown.moved > .dropdown,
       .top-bar.expanded .top-bar-section .dropdown {
@@ -1846,11 +1849,11 @@ meta.foundation-mq-topbar {
     height: 1px;
     width: 100%; }
   .top-bar-section ul li {
-    background: #333333; }
+   background: #E04D25;}
     .top-bar-section ul li > a {
       color: #FFFFFF;
       display: block;
-      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important;
       font-size: 0.8125rem;
       font-weight: normal;
       padding-left: 0.9375rem;
@@ -2046,7 +2049,7 @@ meta.foundation-mq-topbar {
 
 @media only screen and (min-width: 40.0625em) {
   .top-bar {
-    background: #333333;
+    background: #E04D25;
     overflow: visible; }
     .top-bar:before, .top-bar:after {
       content: " ";
@@ -2102,9 +2105,10 @@ meta.foundation-mq-topbar {
       background: #222222;
       color: #FFFFFF; }
     .top-bar-section li:not(.has-form) a:not(.button) {
-      background: #333333;
-      line-height: 2.8125rem;
-      padding: 0 0.9375rem; }
+     background: #E04D25;
+      /*manual change*/
+      line-height: 4.5125rem;
+      padding: 2px 0.9375rem; }
       .top-bar-section li:not(.has-form) a:not(.button):hover {
         background-color: #555555;
         background: #222222; }
@@ -2846,7 +2850,7 @@ meta.foundation-mq-topbar {
   .pricing-table .title {
     background-color: #333333;
     color: #EEEEEE;
-    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important;
     font-size: 1rem;
     font-weight: normal;
     padding: 0.9375rem 1.25rem;
@@ -2854,7 +2858,7 @@ meta.foundation-mq-topbar {
   .pricing-table .price {
     background-color: #F6F6F6;
     color: #333333;
-    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important;
     font-size: 2rem;
     font-weight: normal;
     padding: 0.9375rem 1.25rem;
@@ -3378,7 +3382,7 @@ meta.foundation-mq-topbar {
       display: block;
       background-color: #EFEFEF;
       color: #222222;
-      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important;
       font-size: 1rem;
       padding: 1rem 2rem; }
       .tabs dd > a:hover,
@@ -3497,7 +3501,7 @@ ul.pagination {
 
 .side-nav {
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important;
   list-style-position: outside;
   list-style-type: none;
   margin: 0;
@@ -3518,7 +3522,7 @@ ul.pagination {
         color: #1cc7ff; }
     .side-nav li.active > a:first-child:not(.button) {
       color: #1cc7ff;
-      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important;
       font-weight: normal; }
     .side-nav li.divider {
       border-top: 1px solid;
@@ -3550,7 +3554,7 @@ ul.pagination {
       background: #EFEFEF;
       color: #222222;
       display: block;
-      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important;
       font-size: 1rem;
       padding: 1rem; }
       .accordion .accordion-navigation > a:hover, .accordion dd > a:hover {
@@ -3746,7 +3750,7 @@ p {
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
   color: #222222;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important;
   font-style: normal;
   font-weight: normal;
   line-height: 1.4;
@@ -4530,7 +4534,7 @@ blockquote p {
   .sub-nav li {
     color: #999999;
     float: left;
-    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important;
     font-size: 0.875rem;
     font-weight: normal;
     margin-left: 1rem;
@@ -4714,7 +4718,7 @@ blockquote p {
       top: 22px; } }
 .label {
   display: inline-block;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important;
   font-weight: normal;
   line-height: 1;
   margin-bottom: auto;
