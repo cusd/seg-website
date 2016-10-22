@@ -25,6 +25,41 @@ $(document).ready(function() {
 		$(".side_fix").css("margin" , "0 10%;");
 
 	}
+	// word counter
+	// function count_words(){
+	//     var paragraphs = document.getElementsByTagName("p.read-more-wrap");
+	//     var count = 0;
+	//     for(var i = 0; i < paragraphs.length; i++)
+	//     {
+	//         count += paragraphs[i].innerHTML.split(' ').length;
+	//     }
+	// }
+
+	function countWords(){
+	    // Select all the p elements in the page.
+	    var paragraphs = document.getElementsByTagName("p");
+	  
+	    // The counter.
+	    var count = 0;
+	  
+	    for(var i = 0; i < paragraphs.length; i++)
+	    {
+	        // Split the innerHtml of the current paragraph to count the words.
+	        count += paragraphs[i].innerHTML.split(' ').length;
+	    }
+	    count=count-1;
+	    console.log(count);
+	    if (count<8){
+	    	console.log("initiate hide");
+	    	document.getElementById("hider").style.display="none";
+			// document.getElementsById("read-more-trigger").style.display="none";
+	    }
+	}
+
+	countWords();
+
+
+
 });
 
 

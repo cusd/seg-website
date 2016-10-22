@@ -177,6 +177,18 @@ background: url("../img/hero.jpg") repeat scroll 0 0 #074E68;
     padding: 1% 24%;
     position: absolute;
 }
+.upd_hero{
+  background: url("../img/hero2.jpg") repeat scroll 0 0 #074E68;
+  background-position: center;
+    height: 250px;
+    position: relative;
+    text-align: left;
+}
+.upd_cont{
+    /*margin: 0;*/
+    padding: 2% 4%;
+    /*position: absolute;*/
+}
 .button_fix{ 
   padding: 5% 0;
 }
@@ -203,6 +215,49 @@ background: url("../img/hero.jpg") repeat scroll 0 0 #074E68;
 }
 .side_fix{
   margin: 0px 20%;
+}
+
+
+
+/*stuff for blogs show more button*/
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Show more';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Show less';
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 .5em;
+  color: #666;
+  font-size: .9em;
+  line-height: 2;
+  border: 1px solid #ddd;
+  border-radius: .25em;
+  visibility: inherit;
+}
+.top_space{
+  margin-top: 21px;
 }
 
 
