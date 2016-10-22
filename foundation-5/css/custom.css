@@ -50,6 +50,11 @@ text-align: center;
 vertical-align: middle;
 line-height: 90px;
 }
+.text_center_line{
+text-align: center;
+vertical-align: middle;
+line-height: 40px;
+}
 .nav_head{
 	margin:0;
 	font-family: 'Muli', sans-serif;
@@ -120,6 +125,46 @@ line-height: 90px;
   color: red;
 
 }
+.video_color{
+  background-color: #ADD8E6;
+  height:340px;
+  width: 800px;
+  opacity: 0.5;
+}
+.row1{
+  height:340px;
+  width:100%;
+}
+.row2{
+  height:340px;
+  width:100%;
+}
+.row3{
+  height:340px;
+  width:100%;
+}
+.row8{
+  height:250px;
+  width:100%;
+}
+.cover{
+  height: 340px;
+  background: url(http://www.civilwarmed.org/wp-content/uploads/2016/09/Pry-House-SketchCover-1024x379.jpg);
+    background-size: cover;
+}
+.top_padding{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.profile_teams{
+  display: inherit;
+  padding: 0px 10%;
+  font-family: 'Muli', sans-serif;
+  margin-left: 0;
+  /*box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);*/
+  /*border: solid 4px #FFFFFF;*/
+}
+
 .logo_adjust{
   margin-left: 3% !important;
 }
