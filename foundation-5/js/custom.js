@@ -25,16 +25,6 @@ $(document).ready(function() {
 		$(".side_fix").css("margin" , "0 10%;");
 
 	}
-	// word counter
-	// function count_words(){
-	//     var paragraphs = document.getElementsByTagName("p.read-more-wrap");
-	//     var count = 0;
-	//     for(var i = 0; i < paragraphs.length; i++)
-	//     {
-	//         count += paragraphs[i].innerHTML.split(' ').length;
-	//     }
-	// }
-
 	function countWords(){
 	    // Select all the p elements in the page.
 	    var paragraphs = document.getElementsByTagName("p");
@@ -60,11 +50,88 @@ $(document).ready(function() {
 
 
 
+  // $.ajax("https://docs.google.com/spreadsheet/130nETntuTDctX0oB5LoUwFZ26hNII4pM7-nEOBqP_do&output=csv").done(function(result){
+  //               alert(result);
+  //       });
+
 });
+
+// 	  /**
+//        * Load Sheets API client library.
+//        */
+//       function loadSheetsApi() {
+//         var discoveryUrl =
+//             'https://sheets.googleapis.com/$discovery/rest?version=v4';
+//         gapi.client.load(discoveryUrl).then(listMajors);
+//       }
+
+
+// 	function listBlogs() {
+// 	 var CLIENT_ID = '748207029193-u0ikhqcbjfdcbdjo5h77m4pn62qukhsc.apps.googleusercontent.com';
+
+// 	  var SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"];
+//         gapi.client.sheets.spreadsheets.values.get({
+//           spreadsheetId: '130nETntuTDctX0oB5LoUwFZ26hNII4pM7-nEOBqP_do',
+
+//           // range: 'Class Data!A2:E',
+//           range: 'A2:E',
+//         }).then(function(response) {
+//           var range = response.result;
+//           if (range.values.length > 0) {
+//             appendPre('Title, Author Name, Content, Thumbnail (rendered below)');
+//             for (i = 0; i < range.values.length; i++) {
+//               var row = range.values[i];
+//               // Print columns A and E, which correspond to indices 0 and 4.
+//               appendPre(row[0] + ', ' + row[3]);
+//             }
+//           } else {
+//             appendPre('No data found.');
+//           }
+//         }, function(response) {
+//           appendPre('Error: ' + response.result.error.message);
+//         });
+//         img_load();
+//       }
+
+//       function img_load(){
+// 	      var img = new Image();
+// 	      img.src = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQ...."
+// 	      document.body.appendChild(img);
+// 	  }
+
+//       loadSheetsApi();
+
+// });
 
 
 
 $(function(){
+// var id='130nETntuTDctX0oB5LoUwFZ26hNII4pM7-nEOBqP_do';
+// 	var url = "https://spreadsheets.google.com/feeds/cells/130nETntuTDctX0oB5LoUwFZ26hNII4pM7-nEOBqP_do/od6/public/values?alt=json";
+// 	// $.getJSON(url,{}, function (d) { console.log(d); });
+
+// 	$.getJSON("http://cors.io/spreadsheets.google.com/feeds/list/130nETntuTDctX0oB5LoUwFZ26hNII4pM7-nEOBqP_do/od6/public/values?alt=json", function(data) {
+// 	  //first row "title" column
+// 	  console.log(data.feed.entry[0]['gsx$title']);
+// });
+
+
+
+
+	// $.getJSON(url, function(data){
+	//   var entry = data.feed.entry;
+	//   console.log(data.feed.entry[0]['gsx$title']);
+	  // $(entry).each(function(){
+	    // Column names are name, age, etc.
+	    // console.log(entry);
+	    // console.log(data.feed.entry[0]['gsx$title']['$t']);
+	    // $('.results').prepend('<h2>'+entry.gsx$title.$t+'</h2><p>'+entry.gsx$age+'</p>');
+	  // });
+	// })
+
+
+
+
     $('.card').animate({'margin-top': '20px'}, 1000);
     $('.card').fadeIn("slow", 400);
     // turn off display nones

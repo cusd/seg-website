@@ -16,6 +16,7 @@
         <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="js/fancyapps-fancyBox/source/jquery.fancybox.css" type="text/css" media="screen" />
         <script type="text/javascript" src="js/fancyapps-fancyBox/source/jquery.fancybox.pack.js"></script>
+
         <script type="text/javascript">
           $(document).ready(function() {
             $(".fancybox").fancybox();
@@ -117,6 +118,34 @@
           </div>
           <div class="large-1 small-12 columns" style="visibility:hidden;">_></div>
         </div>
+
+
+
+
+
+        <div class="results"></div> 
+ 
+        <script>
+         
+         // ID of the Google Spreadsheet
+         var spreadsheetID = "130nETntuTDctX0oB5LoUwFZ26hNII4pM7-nEOBqP_do";
+         
+         // Make sure it is public or set to Anyone with link can view 
+         var url = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/od6/public/values?alt=json";
+         
+         $.getJSON(url, function(data) {
+         
+          var entry = data.feed.entry;
+         
+          $(entry).each(function(){
+            // Column names are name, age, etc.
+            console.log(entry)
+            $('.results').prepend('<h2>'+this.gsx$authorname.$t+'</h2>');
+          });
+         
+         });
+         
+        </script>
 
         
 
