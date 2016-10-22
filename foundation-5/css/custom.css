@@ -10,7 +10,7 @@
   float: left;
   transition: opacity 0.7s ease;
 }
-.top-bar-section .right{margin-right: 3%;}
+.top-bar-section .right{margin-right: 4%;}
 
 .logo img{
   display: block;
@@ -130,6 +130,12 @@ line-height: 90px;
   .adjuster{margin-right: 0% !important;}
   .logo_adjust{margin-left: 0% !important;}
 
+}
+.grower{
+ font-size: 1.2em !important; 
+}
+.donate{
+  background-color: #008CBA !important;
 }
 
 /*
