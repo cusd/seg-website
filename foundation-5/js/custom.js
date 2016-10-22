@@ -1,13 +1,7 @@
 // custom.js
-
-// middle calculator
-// var currWidth = $(window).width();
-// console.log(currWidth);
-// var startPos = -100;
-// var endPos = (currWidth / 2) + (startPos / 2);
-// console.log(endPos);
+// trigger for image gallery
 $(document).ready(function() {
-    $("#pic_1").fancybox({
+	 $(".pic").fancybox({
     	openEffect	: 'elastic',
     	closeEffect	: 'elastic',
 
@@ -17,98 +11,20 @@ $(document).ready(function() {
     		}
     	}
     });
-
-    $("#pic_2").fancybox({
-    	openEffect	: 'elastic',
-    	closeEffect	: 'elastic',
-
-    	helpers : {
-    		title : {
-    			type : 'inside'
-    		}
-    	}
-    });
-     $("#pic_3").fancybox({
-    	openEffect	: 'elastic',
-    	closeEffect	: 'elastic',
-
-    	helpers : {
-    		title : {
-    			type : 'inside'
-    		}
-    	}
-    });
-      $("#pic_4").fancybox({
-    	openEffect	: 'elastic',
-    	closeEffect	: 'elastic',
-
-    	helpers : {
-    		title : {
-    			type : 'inside'
-    		}
-    	}
-    });
-       $("#pic_5").fancybox({
-    	openEffect	: 'elastic',
-    	closeEffect	: 'elastic',
-
-    	helpers : {
-    		title : {
-    			type : 'inside'
-    		}
-    	}
-    });
-        $("#pic_6").fancybox({
-    	openEffect	: 'elastic',
-    	closeEffect	: 'elastic',
-
-    	helpers : {
-    		title : {
-    			type : 'inside'
-    		}
-    	}
-    });
-     $("#pic_7").fancybox({
-    	openEffect	: 'elastic',
-    	closeEffect	: 'elastic',
-
-    	helpers : {
-    		title : {
-    			type : 'inside'
-    		}
-    	}
-    });
-	  $("#pic_8").fancybox({
-    	openEffect	: 'elastic',
-    	closeEffect	: 'elastic',
-
-    	helpers : {
-    		title : {
-    			type : 'inside'
-    		}
-    	}
-    });
-	    $("#pic_9").fancybox({
-    	openEffect	: 'elastic',
-    	closeEffect	: 'elastic',
-
-    	helpers : {
-    		title : {
-    			type : 'inside'
-    		}
-    	}
-    });
-	      $("#pic_10").fancybox({
-    	openEffect	: 'elastic',
-    	closeEffect	: 'elastic',
-
-    	helpers : {
-    		title : {
-    			type : 'inside'
-    		}
-    	}
-    });
+	 // to fix resizing stats on home page
+	$(window).resize(flo_fix);
+	
+	function flo_fix(){
+	 if ($(window).width() <=641){
+		$("#tagger_1").removeClass("right");
+		$("#tagger_2").removeClass("left");
+		}else{
+		$("#tagger_1").addClass("right");
+		$("#tagger_2").addClass("left");
+		}
+	}
 });
+
 
 
 $(function(){
@@ -128,11 +44,5 @@ $(function(){
 
     // $('.left_fly').animate({'margin-left':-100 }, 400);
 	// $('.right_fly').animate({'margin-right': }, 400);
+
 });
-
-
-
-
-// $( "div.example" ).css( "width", function( index ) {
-//   return index * 50;
-// });
