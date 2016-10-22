@@ -101,7 +101,7 @@ line-height: 90px;
   transition: opacity 0.7s ease;
 }
 .cusd:hover{
-  opacity: .7;
+  opacity: .85;
 }
 
 .bleh{
@@ -134,47 +134,30 @@ line-height: 90px;
   color: #FFFFFF;
 }
 
-/*
-.valign-middle {
-    display: table;
+/*hero image*/
+.homepage-hero{
+background: url("../img/hero.jpg") repeat scroll 0 0 #074E68;
+    height: 460px;
+    /*padding: 124px 238px;*/
+    /*padding: 100px 20px 0;*/
+    position: relative;
+    text-align: left;
+}
+.hero_cont h4{
+    margin: 0;
+    padding: 13% 24%;
+    /*background: yellow;*/
+    position: absolute;
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*margin-right: -50%;*/
 }
 
-.valign-middle .columns {
-    display: table-cell;
-    vertical-align: middle;
+.txt_center{
+  vertical-align: middle;
+
+
 }
 
-.valign-middle .columns,
-.valign-middle [class*="column"] + [class*="column"]:last-child {
-    float: none;
-}
-*/
-/*OLD NAV BAR*/
-/*<nav class="top-bar" data-topbar role="navigation">
-      <ul class="title-area">
-        <!-- <li class="name">
-          <h1><a href="#">My Site</a></h1>
-        </li> -->
 
-         <a class="item">
-            <img src="img/seg.svg">
-        </a>
-         <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-      </ul>
-      <section class="top-bar-section">
-        <!-- Right Nav Section -->
-        <ul class="right">
-            <li class="name">
-                <h1><a href="teams.html"> Teams </a> </h1>
-        </ul>
-        <ul class="right">
-            <li class="name">
-                <h1><a href="blog.html"> Blog </a> </h1>
-        </ul>
-        <ul class="right">
-            <li class="name">
-                <h1><a href="about.html"> Teams </a> </h1>
-        </ul>
-      </section>
-    </nav>*/
+
