@@ -118,11 +118,7 @@ $(function(){
 
 
 	// test crap not working
-         // var count=0;
-     //     var entry = data.feed.entry;
-     //      $(entry).each(function(){
-     //      	count=count+1;
-     //      });
+         
          
      //     for (i=0;i<count;i++){
      //     	console.log(entry[i]['gsx$count']['$t']);
@@ -139,22 +135,69 @@ $(function(){
      // });
 
 
-	// kinda working bit
+
+
+
+
+// kinda working bit
+  //         var entry = data.feed.entry;
+         
+  //         $(entry).each(function(){
+  //           // Column names are name, age, etc.
+  //           console.log(entry)
+
+
+  //           $('.title').append(this.gsx$title.$t);
+  //           $('.author').append(this.gsx$author.$t);
+  //           $('.date').append(this.gsx$date.$t);
+  //           $('.caption').append(this.gsx$caption.$t);
+  //           $('.main_content').append(this.gsx$content.$t);
+  //         });
+         
+  // });
+
+
+
+
+
+//end kinda working bit
+
+
+// WORKING DYNAMIC PIECE YAAAASSS
           var entry = data.feed.entry;
+          var counter=0;
+         $(entry).each(function(){
+         	counter=counter+1;
+         }); 
+         for (i=0; i<counter;i++){
+         	// console.log(entry[i]);
+         	var count=entry[i].gsx$count.$t;
+         	console.log(count);
+            var title=entry[i].gsx$title.$t;
+            console.log(title);
+            var author=entry[i].gsx$author.$t;
+            console.log(author);
+            var date=entry[i].gsx$date.$t;
+            console.log(date);
+            var caption=entry[i].gsx$caption.$t;
+            console.log(caption);
+            var main_content=entry[i].gsx$content.$t;
+            console.log(main_content);
+            $(".blog").append('<div class="row"> <div class="large-1 small-12 columns" style="visibility:hidden;">_</div> <div class="large-10 small-12 columns panel"> <div class="large-3 medium-4 small-6 columns"> <img src="img/cusdLogo.jpg" style="width:200px; height:200px;" alt="cusd"> </div> <div class="large-9 medium-8 small-6 columns" style="overflow:hidden;"></div> <div> <h4>'+title+'</h4> <h5><span>'+author+'</span>  <span style="margin-left:5%;"> '+date+'</span> </h5> <div> <input type="checkbox" class="read-more-state" id="post-'+count+'" /> <p class="read-more-wrap">'+caption+' <span class="read-more-target"> '+main_content+'</span></p> <label for="post-'+count+'" id="hider" class="read-more-trigger"></label> </div> </div> </div> <div class="large-1 small-12 columns" style="visibility:hidden;">_></div></div>');
+
+               // $('.blog').append('<div class="large-1 small-12 columns" style="visibility:hidden;">_</div> <div class="large-10 small-12 columns panel"> <div class="large-3 medium-4 small-6 columns"> <img src="img/cusdLogo.jpg" style="width:200px; height:200px;" alt="cusd"> </div> <div class="large-9 medium-8 small-6 columns" style="overflow:hidden;"></div> <div> <h4>'+title+'</h4> <h5><span>'+author+'</span>  <span style="margin-left:5%;"> '+date+'</span> </h5> <div> <input type="checkbox" class="read-more-state" id="post-'+count+'" /> <p class="read-more-wrap">'+caption+' <span class="read-more-target"> '+main_content+'</span></p> <label for="post-'+count+'" id="hider" class="read-more-trigger"></label> </div> </div> </div> <div class="large-1 small-12 columns" style="visibility:hidden;">_></div>');  
+               // $('.blog').append('<div class="large-1 small-12 columns" style="visibility:hidden;">_</div> <div class="large-10 small-12 columns panel"> <div class="large-3 medium-4 small-6 columns"> <img src="img/cusdLogo.jpg" style="width:200px; height:200px;" alt="cusd"> </div> <div class="large-9 medium-8 small-6 columns" style="overflow:hidden;"></div> <div> <h4>hi</h4> <h5><span>hi</span>  <span style="margin-left:5%;"> hi</span> </h5> <div> <input type="checkbox" class="read-more-state" id="post-4" /> <p class="read-more-wrap">HEY <span class="read-more-target"> DICK</span></p> <label for="post-4" id="hider" class="read-more-trigger"></label> </div> </div> </div> <div class="large-1 small-12 columns" style="visibility:hidden;">_></div>');
+         }
          
-          $(entry).each(function(){
-            // Column names are name, age, etc.
-            console.log(entry)
+        
+  });
 
 
-            $('.title').append(this.gsx$title.$t);
-            $('.author').append(this.gsx$author.$t);
-            $('.date').append(this.gsx$date.$t);
-            $('.caption').append(this.gsx$caption.$t);
-            $('.main_content').append(this.gsx$content.$t);
-          });
-         
-         });
+        
+//END DYNAMIC PIECE
+
+
+
 
 
 
