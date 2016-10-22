@@ -11,9 +11,9 @@ $(document).ready(function() {
     		}
     	}
     });
-	 // to fix resizing stats on home page
+	 // to fix resizing stats and logos on home page
 	$(window).resize(flo_fix);
-	
+
 	function flo_fix(){
 	 if ($(window).width() <=641){
 		$("#tagger_1").removeClass("right");
@@ -22,6 +22,8 @@ $(document).ready(function() {
 		$("#tagger_1").addClass("right");
 		$("#tagger_2").addClass("left");
 		}
+		$(".side_fix").css("margin" , "0 10%;");
+
 	}
 });
 

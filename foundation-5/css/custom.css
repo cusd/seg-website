@@ -201,5 +201,8 @@ background: url("../img/hero.jpg") repeat scroll 0 0 #074E68;
 .thin_txt{
   font-weight: 200;
 }
+.side_fix{
+  margin: 0px 20%;
+}
 
 
