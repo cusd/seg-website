@@ -185,12 +185,20 @@ $(function(){
             // console.log(main_content);
             var img1=entry[i].gsx$thumb1.$t;
             var img2=entry[i].gsx$thumb2.$t;
-            var thumb=img1.concat(img2);
-            console.log(thumb);
+            var img3=entry[i].gsx$thumb3.$t;
+            var img4=entry[i].gsx$thumb4.$t;
+            var img5=entry[i].gsx$thumb5.$t;
+
+  
+            var thumb=img1+img2+img3+img4+img5;
+            // console.log(thumb);
 
             $(".blog").append('<div class="row"> <div class="large-1 stylemall-12 columns" style="visibility:hidden;">_</div> <div class="large-10 small-12 columns panel"> <div class="large-3 medium-4 small-6 columns"> <img src="'+thumb+'"style="width:200px; height:200px;" alt="'+title+'"> </div> <div class="large-9 medium-8 small-6 columns" style="overflow:hidden;"></div> <div> <h4>'+title+'</h4> <h5><span>'+author+'</span>  <span style="margin-left:5%;"> '+date+'</span> </h5> <div> <input type="checkbox" class="read-more-state" id="post-'+count+'" /> <p class="read-more-wrap">'+caption+' <span class="read-more-target"><br> '+main_content+'</span></p> <label for="post-'+count+'" id="hider" class="read-more-trigger"></label> </div> </div> </div> <div class="large-1 small-12 columns" style="visibility:hidden;">_></div></div>');
          } 
   });
+
+
+
 
 
         

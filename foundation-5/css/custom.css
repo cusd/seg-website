@@ -217,15 +217,27 @@ background: url("../img/hero.jpg") repeat scroll 0 0 #074E68;
     text-align: left;
 }
 .foot_hero{
-  background: url("../img/hero2.jpg") repeat scroll 0 0 #074E68;
-  background-position: center;
-    height: 250px;
-    position: relative;
-    text-align: left;
+  background:url(../img/seg-hero.jpg) no-repeat;
+
+
+/*   linear-gradient(
+    rgba(153, 207, 224, 0.45), 
+    rgba(153, 207, 224, 0.45)
+  ),*/
+
+
+  /*background: url("../img/seg-hero.jpg") repeat scroll 0 0 #074E68;*/
+  background-position: 41% 56%;
+  background-size: 100%;
+  height: 275px;
+  position: relative;
+  text-align: left;
+
 }
 .foot_cont h4{
-    margin: 0;
-    padding: 1% 24%;
+    /*margin: 0;*/
+    margin-left:5%;
+    padding: 3% 24%;
     position: absolute;
 }
 .upd_hero{
@@ -265,7 +277,7 @@ background: url("../img/hero.jpg") repeat scroll 0 0 #074E68;
   font-weight: 200;
 }
 .side_fix{
-  margin: 0px 20%;
+  margin: 0px;
 }
 
 
