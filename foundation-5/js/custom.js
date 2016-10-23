@@ -163,7 +163,7 @@ $(function(){
 //end kinda working bit
 
 
-// WORKING DYNAMIC PIECE YAAAASSS
+// WORKING DYNAMIC PIECE
           var entry = data.feed.entry;
           var counter=0;
          $(entry).each(function(){
@@ -172,50 +172,29 @@ $(function(){
          for (i=0; i<counter;i++){
          	// console.log(entry[i]);
          	var count=entry[i].gsx$count.$t;
-         	console.log(count);
+         	// console.log(count);
             var title=entry[i].gsx$title.$t;
-            console.log(title);
+            // console.log(title);
             var author=entry[i].gsx$author.$t;
-            console.log(author);
+            // console.log(author);
             var date=entry[i].gsx$date.$t;
-            console.log(date);
+            // console.log(date);
             var caption=entry[i].gsx$caption.$t;
-            console.log(caption);
+            // console.log(caption);
             var main_content=entry[i].gsx$content.$t;
-            console.log(main_content);
-            $(".blog").append('<div class="row"> <div class="large-1 small-12 columns" style="visibility:hidden;">_</div> <div class="large-10 small-12 columns panel"> <div class="large-3 medium-4 small-6 columns"> <img src="img/cusdLogo.jpg" style="width:200px; height:200px;" alt="cusd"> </div> <div class="large-9 medium-8 small-6 columns" style="overflow:hidden;"></div> <div> <h4>'+title+'</h4> <h5><span>'+author+'</span>  <span style="margin-left:5%;"> '+date+'</span> </h5> <div> <input type="checkbox" class="read-more-state" id="post-'+count+'" /> <p class="read-more-wrap">'+caption+' <span class="read-more-target"> '+main_content+'</span></p> <label for="post-'+count+'" id="hider" class="read-more-trigger"></label> </div> </div> </div> <div class="large-1 small-12 columns" style="visibility:hidden;">_></div></div>');
+            // console.log(main_content);
+            var img1=entry[i].gsx$thumb1.$t;
+            var img2=entry[i].gsx$thumb2.$t;
+            var thumb=img1.concat(img2);
+            console.log(thumb);
 
-               // $('.blog').append('<div class="large-1 small-12 columns" style="visibility:hidden;">_</div> <div class="large-10 small-12 columns panel"> <div class="large-3 medium-4 small-6 columns"> <img src="img/cusdLogo.jpg" style="width:200px; height:200px;" alt="cusd"> </div> <div class="large-9 medium-8 small-6 columns" style="overflow:hidden;"></div> <div> <h4>'+title+'</h4> <h5><span>'+author+'</span>  <span style="margin-left:5%;"> '+date+'</span> </h5> <div> <input type="checkbox" class="read-more-state" id="post-'+count+'" /> <p class="read-more-wrap">'+caption+' <span class="read-more-target"> '+main_content+'</span></p> <label for="post-'+count+'" id="hider" class="read-more-trigger"></label> </div> </div> </div> <div class="large-1 small-12 columns" style="visibility:hidden;">_></div>');  
-               // $('.blog').append('<div class="large-1 small-12 columns" style="visibility:hidden;">_</div> <div class="large-10 small-12 columns panel"> <div class="large-3 medium-4 small-6 columns"> <img src="img/cusdLogo.jpg" style="width:200px; height:200px;" alt="cusd"> </div> <div class="large-9 medium-8 small-6 columns" style="overflow:hidden;"></div> <div> <h4>hi</h4> <h5><span>hi</span>  <span style="margin-left:5%;"> hi</span> </h5> <div> <input type="checkbox" class="read-more-state" id="post-4" /> <p class="read-more-wrap">HEY <span class="read-more-target"> DICK</span></p> <label for="post-4" id="hider" class="read-more-trigger"></label> </div> </div> </div> <div class="large-1 small-12 columns" style="visibility:hidden;">_></div>');
-         }
-         
-        
+            $(".blog").append('<div class="row"> <div class="large-1 stylemall-12 columns" style="visibility:hidden;">_</div> <div class="large-10 small-12 columns panel"> <div class="large-3 medium-4 small-6 columns"> <img src="'+thumb+'"style="width:200px; height:200px;" alt="'+title+'"> </div> <div class="large-9 medium-8 small-6 columns" style="overflow:hidden;"></div> <div> <h4>'+title+'</h4> <h5><span>'+author+'</span>  <span style="margin-left:5%;"> '+date+'</span> </h5> <div> <input type="checkbox" class="read-more-state" id="post-'+count+'" /> <p class="read-more-wrap">'+caption+' <span class="read-more-target"><br> '+main_content+'</span></p> <label for="post-'+count+'" id="hider" class="read-more-trigger"></label> </div> </div> </div> <div class="large-1 small-12 columns" style="visibility:hidden;">_></div></div>');
+         } 
   });
 
 
         
 //END DYNAMIC PIECE
 
-
-
-
-
-
-    $('.card').animate({'margin-top': '20px'}, 1000);
-    $('.card').fadeIn("slow", 400);
-    // turn off display nones
-    $('.profile').show(400);
-    $('.txt_hide').show(400);
-    // $('.profile').css('margin-top','0');
-
-    var rowHeight = $(".row").height();
-
-    // $(".valign").height(rowHeight);
-    $(".midMaker").css("height", function(rowHeight){return rowHeight});
-    // $(".midMaker").css("height",rowHeight);
-
-
-    // $('.left_fly').animate({'margin-left':-100 }, 400);
-	// $('.right_fly').animate({'margin-right': }, 400);
 
 });
