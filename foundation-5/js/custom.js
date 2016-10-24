@@ -23,8 +23,8 @@ $(document).ready(function() {
 		$("#tagger_2").addClass("left");
 		}
 		$(".side_fix").css("margin" , "0 10%;");
-
 	}
+	flo_fix();
 	
 
 
