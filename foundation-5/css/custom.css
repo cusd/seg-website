@@ -162,6 +162,10 @@ line-height: 30px;
   margin-top: 30px;
   margin-bottom: 30px;
 }
+.top_padding_teams{
+  margin-top: 30px;
+  margin-bottom: 21px;
+}
 .profile_teams{
   display: inherit;
   padding: 0px 10%;
