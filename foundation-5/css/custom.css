@@ -333,3 +333,14 @@ background: url("../img/hero.jpg") repeat scroll 0 0 #074E68;
   /*padding:10px;*/
 }
 
+/*@media screen and (min-width: 0px) and (max-width: 640px) {
+  div .tagger_1{
+    clear:right !important;
+
+  }
+  .tagger_2 .tagger_2{
+    clear:left !important;
+  }
+
+}*/
+
