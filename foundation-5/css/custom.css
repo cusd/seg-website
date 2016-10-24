@@ -235,6 +235,7 @@ background: url("../img/hero.jpg") repeat scroll 0 0 #074E68;
 }
 .foot_cont h4{
     /*margin: 0;*/
+    font-weight: 900;
     margin-left:0%;
     padding: 1% 24%;
     position: absolute;
